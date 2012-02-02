@@ -1,0 +1,42 @@
+2012/02/02 17:45:55 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:45:55 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:45:55 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:45:55 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:46:01 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:46:01 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:46:05 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:46:05 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:49:26 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:49:26 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:49:27 [warning] [application] Failed to set unsafe attribute "elements" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/02 17:49:27 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
+in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
