@@ -18,11 +18,7 @@
 		<?php echo $form->dropDownList($model, 'user_iduser', GxHtml::listDataEx(User::model()->findAllAttributes(null, true))); ?>
 		<?php echo $form->error($model,'user_iduser'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'json_skript'); ?>
-		<?php echo $form->textArea($model, 'json_skript'); ?>
-		<?php echo $form->error($model,'json_skript'); ?>
-		</div><!-- row -->
+
 		<div class="row">
 		<?php echo $form->labelEx($model,'zeit'); ?>
 		<?php echo $form->textField($model, 'zeit'); ?>

@@ -48,10 +48,36 @@ public function accessRules() {
 					$this->redirect(array('view', 'id' => $model->idskript));
 			}
 		}
-        $model->json_skript = $_POST['json'];
+
+        $test = array(
+                array(
+                    "value" => "bla",
+                    "type" => "echo",
+                    "child"=>NULL
+                ),
+                array(
+                    "value"=>"0",
+                    "type" => "var",
+                    "name"=>"vari",
+                    "child"=>NULL
+                ),
+                array(
+                    "value" => "vari == 0",
+                    "type" => "if",
+                    "child"=>array(
+                        array(
+                                    "value" => "bla 1",
+                                    "type" => "echo",
+                                    "child"=>NULL
+                                ),
+                    )
+                ),
+            );
+        $js_test = CJSON::encode($test);
+        $model->json_skript = CJSON::decode( $_POST['json'] );
 
         $do = new convert("Javascript");
-        echo nl2br($do->parse($_POST['json']));
+        echo nl2br($do->parse( CJSON::decode( $_POST['json'] ) ));
 
 		$this->render('create', array( 'model' => $model ));
 	}
