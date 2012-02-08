@@ -48,8 +48,12 @@ public function accessRules() {
 					$this->redirect(array('view', 'id' => $model->idskript));
 			}
 		}
+        $model->json_skript = $_POST['json'];
 
-		$this->render('create', array( 'model' => $model));
+        $do = new convert("Javascript");
+        echo nl2br($do->parse($_POST['json']));
+
+		$this->render('create', array( 'model' => $model ));
 	}
 
 	public function actionUpdate($id) {

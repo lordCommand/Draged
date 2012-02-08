@@ -41,7 +41,7 @@ class convert
         foreach($elements as $e){
             $this->ele[$e->name] = $e->attributes;
         }
-        CVarDumper::dump($this->ele,10,true);
+        //CVarDumper::dump($this->ele,10,true);
 
     }
     function parse($input){
