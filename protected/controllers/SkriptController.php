@@ -32,19 +32,27 @@ public function accessRules() {
 
 	public function actionCreate() {
 		$model = new Skript;
-
+        $model->user_iduser = Yii::app()->user->id;
+        //CVarDumper::dump(CJSON::decode( $_POST['jsonout'] ),10,true);
 		$this->performAjaxValidation($model, 'skript-form');
-
 		if (isset($_POST['Skript'])) {
 			$model->setAttributes($_POST['Skript']);
-			$relatedData = array(
-				'spraches' => $_POST['Skript']['spraches'] === '' ? null : $_POST['Skript']['spraches'],
-				);
+            $model->user_iduser = Yii::app()->user->id;
 
-			if ($model->saveWithRelated($relatedData)) {
-				if (Yii::app()->getRequest()->getIsAjaxRequest())
+            $model->zeit = time();
+			if ($model->save()) {
+				/*if (Yii::app()->getRequest()->getIsAjaxRequest())
 					Yii::app()->end();
-				else
+				else*/
+                foreach($_POST['Skript']['spraches'] as $sprache){
+                    $mod = new SkriptHasSprache();
+                    $mod->skript_idskript = $model->idskript;
+                    $mod->sprache_idsprache = $sprache;
+                    $do = new convert($sprache);
+                    $mod->gen_skript = $do->parse(CJSON::decode( $model->json_skript));
+                    $mod->save();
+                }
+
 					$this->redirect(array('view', 'id' => $model->idskript));
 			}
 		}
@@ -74,10 +82,13 @@ public function accessRules() {
                 ),
             );
         $js_test = CJSON::encode($test);
-        $model->json_skript = CJSON::decode( $_POST['json'] );
+        //$model->json_skript = $js_test;
+        $model->json_skript = $_POST['jsonout'];
 
-        $do = new convert("Javascript");
-        echo nl2br($do->parse( CJSON::decode( $_POST['json'] ) ));
+        $do = new convert(1);
+        //echo nl2br($do->parse( CJSON::decode( $js_test ) ));
+
+        //echo "test:".nl2br($do->parse( CJSON::decode( $_POST['jsonout'] ) ));
 
 		$this->render('create', array( 'model' => $model ));
 	}

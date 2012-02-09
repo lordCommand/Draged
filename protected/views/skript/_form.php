@@ -15,14 +15,12 @@
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'user_iduser'); ?>
-		<?php echo $form->dropDownList($model, 'user_iduser', GxHtml::listDataEx(User::model()->findAllAttributes(null, true))); ?>
+		<?php echo $form->hiddenField($model, 'user_iduser'); ?>
 		<?php echo $form->error($model,'user_iduser'); ?>
 		</div><!-- row -->
-
 		<div class="row">
-		<?php echo $form->labelEx($model,'zeit'); ?>
-		<?php echo $form->textField($model, 'zeit'); ?>
-		<?php echo $form->error($model,'zeit'); ?>
+		<?php echo $form->hiddenField($model, 'json_skript'); ?>
+		<?php echo $form->error($model,'json_skript'); ?>
 		</div><!-- row -->
 
 		<label><?php echo GxHtml::encode($model->getRelationLabel('spraches')); ?></label>

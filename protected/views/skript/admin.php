@@ -6,8 +6,6 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-		array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-		array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
 	);
 
 Yii::app()->clientScript->registerScript('search', "
@@ -42,14 +40,16 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 	'dataProvider' => $model->search(),
 	'filter' => $model,
 	'columns' => array(
-		'idskript',
 		array(
 				'name'=>'user_iduser',
 				'value'=>'GxHtml::valueEx($data->userIduser)',
 				'filter'=>GxHtml::listDataEx(User::model()->findAllAttributes(null, true)),
 				),
 		'json_skript',
-		'zeit',
+        array(
+        				'name'=>'zeit',
+        				'value'=>'date("H:i d.m.Y",$data->zeit)',
+            ),
 		array(
 			'class' => 'CButtonColumn',
 		),

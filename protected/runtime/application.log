@@ -40,3 +40,486 @@ in C:\xampp\htdocs\draged\index.php (13)
 2012/02/02 17:49:27 [warning] [application] Failed to set unsafe attribute "skripts" of "Sprache".
 in C:\xampp\htdocs\draged\protected\controllers\SpracheController.php (39)
 in C:\xampp\htdocs\draged\index.php (13)
+2012/02/08 22:37:44 [warning] [application] Failed to set unsafe attribute "skripts" of "User".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxController.php (161)
+in C:\xampp\htdocs\draged\protected\controllers\UserController.php (36)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/08 22:37:47 [warning] [application] Failed to set unsafe attribute "skripts" of "User".
+in C:\xampp\htdocs\draged\protected\controllers\UserController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/08 22:37:48 [warning] [application] Failed to set unsafe attribute "skripts" of "User".
+in C:\xampp\htdocs\draged\protected\controllers\UserController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/08 22:44:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(54): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+---
+2012/02/08 22:45:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(54): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+---
+2012/02/08 22:54:48 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\draged\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\web\widgets\CActiveForm.php(613): activeTextArea()
+#1 C:\xampp\htdocs\draged\protected\views\skript\_form.php(23): GxActiveForm->textArea()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): SkriptController->renderInternal()
+#4 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): SkriptController->renderFile()
+#5 C:\xampp\htdocs\draged\protected\views\skript\create.php(19): SkriptController->renderPartial()
+#6 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require()
+#7 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): SkriptController->renderInternal()
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): SkriptController->renderFile()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(783): SkriptController->renderPartial()
+#10 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(82): SkriptController->render()
+#11 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#12 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): SkriptController->runAction()
+#14 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): SkriptController->filterAccessControl()
+#17 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): SkriptController->runActionWithFilters()
+#20 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): SkriptController->run()
+#21 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\draged\index.php(13): CWebApplication->run()
+REQUEST_URI=/draged/index.php?r=skript/create
+in C:\xampp\htdocs\draged\protected\views\skript\_form.php (23)
+in C:\xampp\htdocs\draged\protected\views\skript\create.php (19)
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (82)
+2012/02/08 22:58:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(55): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+---
+2012/02/08 22:59:46 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\draged\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\web\widgets\CActiveForm.php(613): activeTextArea()
+#1 C:\xampp\htdocs\draged\protected\views\skript\_form.php(23): GxActiveForm->textArea()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): SkriptController->renderInternal()
+#4 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): SkriptController->renderFile()
+#5 C:\xampp\htdocs\draged\protected\views\skript\create.php(19): SkriptController->renderPartial()
+#6 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require()
+#7 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): SkriptController->renderInternal()
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): SkriptController->renderFile()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(783): SkriptController->renderPartial()
+#10 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(82): SkriptController->render()
+#11 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#12 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): SkriptController->runAction()
+#14 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): SkriptController->filterAccessControl()
+#17 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): SkriptController->runActionWithFilters()
+#20 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): SkriptController->run()
+#21 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\draged\index.php(13): CWebApplication->run()
+REQUEST_URI=/draged/index.php?r=skript/create
+in C:\xampp\htdocs\draged\protected\views\skript\_form.php (23)
+in C:\xampp\htdocs\draged\protected\views\skript\create.php (19)
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (82)
+2012/02/08 23:32:02 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\draged\protected\components\convert.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): SkriptController->runAction()
+#2 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): SkriptController->filterAccessControl()
+#5 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): SkriptController->runActionWithFilters()
+#8 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): SkriptController->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\draged\index.php(13): CWebApplication->run()
+REQUEST_URI=/draged/index.php?r=skript/create
+in C:\xampp\htdocs\draged\protected\components\convert.php (41)
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (89)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 01:30:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:31:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:31:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:31:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:33:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:33:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:35:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:35:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:35:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:39:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:40:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Kein ARRAY!' in C:\xampp\htdocs\draged\protected\components\convert.php:49
+Stack trace:
+#0 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(91): convert->parse(NULL)
+#1 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#12 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:46:37 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\draged\protected\components\convert.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): ElementController->renderInternal()
+#1 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): ElementController->renderFile()
+#2 C:\xampp\htdocs\draged\yii\framework\web\CController.php(783): ElementController->renderPartial()
+#3 C:\xampp\htdocs\draged\protected\controllers\ElementController.php(84): ElementController->render()
+#4 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): ElementController->actionIndex()
+#5 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): ElementController->runAction()
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): ElementController->filterAccessControl()
+#10 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): ElementController->runActionWithFilters()
+#13 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): ElementController->run()
+#14 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\draged\index.php(13): CWebApplication->run()
+REQUEST_URI=/draged/index.php?r=element/index
+in C:\xampp\htdocs\draged\protected\components\convert.php (41)
+in C:\xampp\htdocs\draged\protected\views\element\index.php (24)
+in C:\xampp\htdocs\draged\protected\controllers\ElementController.php (84)
+2012/02/09 01:48:04 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "hidden".' in C:\xampp\htdocs\draged\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('hidden', Array)
+#1 C:\xampp\htdocs\draged\protected\views\skript\_form.php(23): GxActiveForm->hidden(Object(Skript), 'json_skript')
+#2 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\draged\protected\views\skript\create.php(19): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\draged\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\draged\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(94): CController->render('create', Array)
+#11 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(50): SkriptController->actionCreate()
+#12 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#21 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/create')
+#22 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/draged/index.php?r=skript/create
+HTTP_REFERER=http://localhost/draged/
+---
+2012/02/09 01:51:53 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 01:58:39 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (101)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 01:58:39 [warning] [application] Failed to set unsafe attribute "skript_idskript" of "SkriptHasSprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxActiveRecord.php (490)
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxActiveRecord.php (370)
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (106)
+2012/02/09 02:03:41 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:03:49 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (101)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:03:54 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (101)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:03:55 [warning] [application] Failed to set unsafe attribute "skript_idskript" of "SkriptHasSprache".
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxActiveRecord.php (490)
+in C:\xampp\htdocs\draged\protected\extensions\giix-components\GxActiveRecord.php (370)
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (106)
+2012/02/09 02:04:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`d013178d`.`skript_has_sprache`, CONSTRAINT `fk_skript_has_sprache_skript1` FOREIGN KEY (`skript_idskript`) REFERENCES `skript` (`idskript`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `skript` WHERE `skript`.`idskript`=2.
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (118)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:04:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`d013178d`.`skript_has_sprache`, CONSTRAINT `fk_skript_has_sprache_skript1` FOREIGN KEY (`skript_idskript`) REFERENCES `skript` (`idskript`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `skript` WHERE `skript`.`idskript`=2' in C:\xampp\htdocs\draged\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\db\ar\CActiveRecord.php(1735): CDbCommand->execute()
+#1 C:\xampp\htdocs\draged\yii\framework\db\ar\CActiveRecord.php(1159): CActiveRecord->deleteByPk('2')
+#2 C:\xampp\htdocs\draged\protected\controllers\SkriptController.php(118): CActiveRecord->delete()
+#3 [internal function]: SkriptController->actionDelete('2')
+#4 C:\xampp\htdocs\draged\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SkriptController), Array)
+#5 C:\xampp\htdocs\draged\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SkriptController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\draged\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\xampp\htdocs\draged\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\draged\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\draged\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\draged\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\xampp\htdocs\draged\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(276): CController->run('delete')
+#15 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skript/delete')
+#16 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/draged/index.php?r=skript/delete&id=2
+HTTP_REFERER=http://localhost/draged/index.php?r=skript/view&id=2
+---
+2012/02/09 02:08:50 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (102)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:09:18 [warning] [application] Failed to set unsafe attribute "spraches" of "Skript".
+in C:\xampp\htdocs\draged\protected\controllers\SkriptController.php (39)
+in C:\xampp\htdocs\draged\index.php (13)
+2012/02/09 02:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "skripte/admin".' in C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\draged\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('skripte/admin')
+#1 C:\xampp\htdocs\draged\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\draged\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/draged/index.php?r=skripte/admin
+HTTP_REFERER=http://localhost/draged/index.php?r=skript/view&id=3
+---

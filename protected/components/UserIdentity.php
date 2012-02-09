@@ -15,19 +15,23 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
+    private $_id;
+
 	public function authenticate()
 	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
+        $get =  User::model()->find('username = :username', array(':username'=>$this->username));
+		if($get === NULL)
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		else if($users[$this->username]!==$this->password)
+		else if($get->password!==$this->password)
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
+		else{
 			$this->errorCode=self::ERROR_NONE;
+            $this->_id = $get->iduser;
+
+        }
 		return !$this->errorCode;
 	}
+    public function getId(){
+   		return $this->_id;
+   	}
 }

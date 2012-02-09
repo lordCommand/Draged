@@ -35,7 +35,7 @@ class convert
     private $ele;
 
     function __construct($sprache){
-        $this->sprache = Sprache::model()->find("name=:name",array(':name'=>$sprache));
+        $this->sprache = Sprache::model()->findByPk($sprache);//("name=:name",array(':name'=>$sprache));
         $elements = $this->sprache->elements;
         $this->ele = array();
         foreach($elements as $e){
